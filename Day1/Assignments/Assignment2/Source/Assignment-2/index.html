@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <style>
+      table,td,tr,th{
+        padding: 10px;
+        border :2px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Data: - </h3>
+    <table id = "table" >
+    </table>
+
+    <h3>Add Employee :- </h3>
+    <input type="number" id = "id" placeholder="EmployeeID" required > 
+    <input type="text" id = "fname" placeholder="First Name" required > <br><br>
+    <input type="text" id = "lname" placeholder="Last Name"  required> 
+    <input type="text" id = "address" placeholder="Address"  required> <br><br>
+    <input type="number" id = "salary" placeholder="Salary"  required> <br><br>
+    <button id = "add">Add</button>  
+
+    <h3>Searching : </h3>
+    <input type="number" id = "Employeeid" placeholder="EmployeeID" required > 
+    <input type="number" id = "Indexnumber" placeholder="Index Number " > <br><br>
+    <button id = "search">Search</button>  
+    <div id = "result"></div>
+
+    
+    <h3>Deleting : </h3>
+    <input type="number" id = "delEmployeeid" placeholder="EmployeeID" required > 
+    <button id = "delete">Delete</button>  
+    <div id = "delresult"></div>
+
+
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
